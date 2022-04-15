@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    list-style: none;
+}
+header{
+    box-shadow: 0 1px 28px rgba(0,0,0,0.25);
+    padding: 20px 0;
+    margin-bottom: 30px;
+
+} 
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+h1,h2,h3,h4,h5,h6,h7{
+    font-weight: 300;
+}
+input{
+    font-size: 36px;
+
+}
+main{
+   flex-grow: 1;
+
+}
+footer{
+    background-color: #3da8e1;
+    margin-top: auto;
+}
+footer .menu ul li a{
+    color: #fff;
+}
+.container{
+    width: 100%;
+    
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.menu{
+    display: flex;
+}
+.menu .cart{
+    width: 50px;
+    margin-right: 50px;
+    position: relative;
+}
+.cart span{
+    font-size: 15px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background-color: #da7b55;
+    padding: 5px;
+    border-radius: 10px;
+    color: #fff;
+}
+.menu{
+    display: flex;
+
+    align-items: center;
+}
+.menu ul{
+
+}
+.menu ul li a{
+    /* border-radius: 5%; */
+    /* padding: 10px; */
+    color: #000;
+    font-size: 20px;
+}
+.menu ul li a.sign_up{
+    border-radius: 5%;
+    padding: 10px;
+    color: #000;
+    font-size: 20px;
+
+}
+.menu ul li a:hover{
+
+   color: #8b3c1c;
+}
+.menu ul li a.sign_up:hover{
+   background-color: #8b3c1c;
+   color: #fff;
+
+}
+.popup{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.705);
+    z-index: 10000;
+
+    
+}
+.popup.activeform{
+    display: block;
+}
+.phone{
+    display: flex;
+    align-items: center;
+}
+.popup__container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.popup_body{
+    margin: auto;
+    width: 500px;
+    background-color: #fff;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    position: relative;
+}
+.popup_body p{
+   /* text-align: center; */
+   cursor: pointer;
+}
+.popup_body .popup__input{
+   margin: 20px 0;
+   width: 70%;
+   font-size: 25px;
+
+   border: none;
+   border-bottom: 2px solid #727272;
+   padding: 5px;
+   /* border: rgb(165, 153, 153) solid 1px; */
+
+}
+.popup__input:focus{
+    outline: none;
+    border-bottom: 2px solid #6cc3f1;
+}
+.popup__close{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+.subbtn{
+    margin: 20px 0;
+    border: none;
+    border-radius:10px ;
+    outline: none;
+    background-color: #da7b55;
+    color: #fff;
+    padding: 10px ;
+    font-size: 35px;
+}
+.subbtn:hover{
+    background-color: #bb6c4d;
+}
+.subbtn:active{
+    background-color: #97563c;
+}
+.title{
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.sub__title{
+    background: #eee;
+    margin: 30px 0;
+    padding: 15px;
+    font-size: 16px;
+}
+.error_sign{
+    display: none;
+
+    background-color: #faebeb;
+    padding: 10px;
+}
+.error_sign.active{
+    display: block;
+    transition: all 1s ease 0s;
+}
+.cols{
+    width: 50%;
+    
+}
+.reg_user input{
+    font-size: 29px;
+    box-shadow: none;
+    border:1px solid black;
+}
+.reg_user input[type="checkbox"]{
+   width: 19px;
+}
+.reg_user p{
+    margin: 20px 0;
+    display: flex;
+    align-items:center ;
+
+}
+.reg_user p label{
+    text-align: left;
+    float: left;
+    width: 155px;
+}
+.reg_user select{
+    font-size: 25px;
+    margin-right: 10px;
+    width: calc((100% - 180px) / 3);
+    
+}
+.errormsg{
+    display: none;
+    color: red;
+}
+.errormsg.active{
+    display: block;
+}
+.user__info{
+    padding: 20px;
+}
+.user__info .col{
+    width: 50%;
+}
+.user__info .col p{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.user__info .col p label{
+    width: 30%;
+    
+}
+.add_product {
+
+
+}
+.info_product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 970px; */
+
+}
+.add_product span{
+    width: 50%;
+}
+.add_product textarea{
+    width: 81%;
+    height: 100px;
+    font-size: 26px;
+}
+.add_product label img{
+    width: 50%;
+}
+.tabs_header ul{
+    display: flex;
+}
+.tabs_header ul li{
+    padding: 10px;
+    cursor: pointer;
+}
+.tabs_header ul li.active{
+    color: #fff;
+    background-color:#da7b55 ;
+}
+.tabs_content ul>li{
+    display: none;
+}
+.tabs_content ul>li.active{
+    display: block;
+}
+select{
+    font-size: 26px;
+}
